@@ -20,29 +20,57 @@ body {
   box-shadow: 5px 5px 5px darkgray;
 }
 
-.container div {
-  margin: 10px;
-  padding: 1em;
-  min-width: 100px;
-  min-height: 100px;
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .a {
+  margin: 10px;
+  padding: 1em;
+
   flex-grow: 1;
-  flex-shrink: 1;
   background-color: pink;
 }
 
 .b {
+  margin: 10px;
+  padding: 1em;
+
   flex-grow: 2;
-  flex-shrink: 2;
   background-color: lightblue;
 }
 
 .c {
+  margin: 10px;
+  padding: 1em;
+
   flex-grow: 1;
-  flex-shrink: 1;
   background-color: lightgreen;
+}
+
+.d {
+  margin: 10px;
+  padding: 1em;
+
+  flex-grow: 1;
+  background-color: rgb(255, 255, 196);
+}
+
+.e {
+  margin: 10px;
+  padding: 1em;
+
+  flex-grow: 1;
+  background-color: rgb(204, 179, 255);
+}
+
+.f {
+  margin: 10px;
+  padding: 1em;
+
+  background-color: burlywood;
 }
 
 @media screen and (min-width: 981px) {
