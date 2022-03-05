@@ -1,3 +1,55 @@
 body {
   background: blanchedalmond;
+  font-size: 5em;
+}
+
+* {
+  border: 1px solid saddlebrown;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  background-color: antiquewhite;
+  box-shadow: 5px 5px 5px darkgray;
+}
+
+.container div {
+  margin: 10px;
+  padding: 1em;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: pink;
+}
+
+.b {
+  flex-grow: 5;
+  flex-shrink: 5;
+  background-color: lightblue;
+}
+
+.c {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 981px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+  }
+
+  .a {
+    width: 100%;
+  }
 }
