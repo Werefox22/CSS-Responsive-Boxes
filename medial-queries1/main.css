@@ -26,19 +26,16 @@ body {
 
 .a {
   flex-grow: 1;
-  flex-shrink: 1;
   background-color: pink;
 }
 
 .b {
   flex-grow: 5;
-  flex-shrink: 5;
   background-color: lightblue;
 }
 
 .c {
   flex-grow: 1;
-  flex-shrink: 1;
   background-color: lightgreen;
 }
 
@@ -46,7 +43,6 @@ body {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: red;
   }
 
   .a {
