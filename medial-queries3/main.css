@@ -3,9 +3,6 @@ body {
   font-size: 5em;
 }
 
-* {
-  border: 1px solid saddlebrown;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -13,7 +10,7 @@ body {
   min-height: 100vh;
 
   background-color: antiquewhite;
-  box-shadow: 5px 5px 5px darkgray;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .letter {
@@ -25,6 +22,18 @@ body {
 
   border: 1px solid darkslategray;
   box-shadow: 5px 5px 5px gray;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+.group div {
+  min-width: 20%;
 }
 
 #a {
@@ -65,7 +74,7 @@ body {
 }
 
 #h {
-  flex-grow: 1;
+  flex-grow: 2;
 
   background-color: azure;
 }
@@ -74,5 +83,17 @@ body {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  #a {
+    width: 100%;
+  }
+
+  .group {
+    flex-grow: 1;
+  }
+
+  #h {
+    flex-grow: 1;
   }
 }
